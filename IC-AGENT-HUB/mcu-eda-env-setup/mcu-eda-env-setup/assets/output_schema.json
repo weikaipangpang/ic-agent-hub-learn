@@ -1,0 +1,60 @@
+{
+  "$schema": "eda_env",
+  "version": "2.0",
+  "timestamp": "",
+  "project_dir": "",
+  "available_tools": [
+    {
+      "name": "",
+      "binary": "",
+      "role": "simulator | lint | synthesizer | pnr | equivalence | sta | extraction | physical_ver | waveform",
+      "vendor": "",
+      "path": "",
+      "version": "",
+      "module": null,
+      "source": "PATH | module_avail | env_var"
+    }
+  ],
+  "module_available_tools": [],
+  "unavailable_tools": [],
+  "selected_tools": {
+    "simulator": null,
+    "lint": null,
+    "synthesizer": null,
+    "pnr": null,
+    "equivalence": null,
+    "sta": null,
+    "extraction": null,
+    "physical_ver": null,
+    "waveform": null
+  },
+  "env_vars": {
+    "SYNOPSYS": {"value": "", "description": "", "exists": true}
+  },
+  "pdk": {
+    "tech_file": "",
+    "tech_lef": "",
+    "tlu_plus_max": "",
+    "tlu_plus_min": "",
+    "drc_rules": "",
+    "lvs_rules": ""
+  },
+  "libraries": {
+    "std_cell": {
+      "ss": {"db": [], "lib": [], "lef": ""},
+      "ff": {"db": [], "lib": [], "lef": ""},
+      "tt": {"db": [], "lib": [], "lef": ""}
+    },
+    "sram": []
+  },
+  "lsf": {
+    "available": false,
+    "mode": "local | ssh | none",
+    "path": ""
+  },
+  "project_files": [],
+  "design_info": {
+    "clocks": [],
+    "makefile_simulator": ""
+  }
+}

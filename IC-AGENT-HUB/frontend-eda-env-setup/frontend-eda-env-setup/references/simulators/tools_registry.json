@@ -1,0 +1,82 @@
+[
+  {
+    "name": "vcs",
+    "binary": "vcs",
+    "version_cmd": ["vcs", "-full64", "-ID"],
+    "version_regex": "Compiler version\\s+([^\\s;]+)",
+    "smoke_type": "compile_sv",
+    "smoke_cmd": ["vcs", "-sverilog", "-full64"],
+    "role": "simulator",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "xcelium",
+    "binary": "xrun",
+    "version_cmd": ["xrun", "-version"],
+    "version_regex": "TOOL:\\s+xrun\\s+(\\S+)",
+    "smoke_type": "compile_sv",
+    "smoke_cmd": ["xrun", "-compile", "-sv"],
+    "role": "simulator",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "questa",
+    "binary": "vsim",
+    "version_cmd": ["vsim", "-version"],
+    "version_regex": "vsim\\s+([^\\s]+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["vsim", "-version"],
+    "role": "simulator",
+    "vendor": "Siemens"
+  },
+  {
+    "name": "verdi",
+    "binary": "verdi",
+    "version_cmd": ["verdi", "-version"],
+    "version_regex": "(Verdi[^\\n]*|version[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["verdi", "-version"],
+    "role": "waveform",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "dve",
+    "binary": "dve",
+    "version_cmd": ["dve", "-version"],
+    "version_regex": "(DVE[^\\n]*|version[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["dve", "-version"],
+    "role": "waveform",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "simvision",
+    "binary": "simvision",
+    "version_cmd": ["simvision", "-version"],
+    "version_regex": "(simvision[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["simvision", "-version"],
+    "role": "waveform",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "spyglass",
+    "binary": "spyglass",
+    "version_cmd": ["spyglass", "-version"],
+    "version_regex": "(SpyGlass[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["spyglass", "-version"],
+    "role": "lint",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "irun",
+    "binary": "irun",
+    "version_cmd": ["irun", "-version"],
+    "version_regex": "TOOL:\\s+xrun\\s+(\\S+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["irun", "-version"],
+    "role": "simulator",
+    "vendor": "Cadence"
+  }
+]

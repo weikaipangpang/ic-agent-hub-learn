@@ -1,0 +1,43 @@
+{
+  "$schema": "stage8_eda_env",
+  "version": "1.1",
+  "design_name": "",
+  "reviewed_input": "stage7_integration_plan.json",
+  "detected_tools": [
+    {
+      "name": "",
+      "role": "simulator | lint | synthesis | waveform",
+      "vendor": "",
+      "path": "",
+      "version": "",
+      "available": true
+    }
+  ],
+  "selected_tools": {
+    "simulator": "",
+    "lint": "",
+    "synthesis": "",
+    "waveform": ""
+  },
+  "waveform_config": {
+    "dump_format": "fsdb | vpd | shm",
+    "dump_compile_flags": "",
+    "dump_runtime_flags": "",
+    "dump_extension": "",
+    "wave_open_command": ""
+  },
+  "selection_reason": "",
+  "makefile": {
+    "path": "sim/Makefile",
+    "generated": true,
+    "simulator": "",
+    "template_used": "",
+    "timestamp": ""
+  },
+  "backup": {
+    "performed": false,
+    "path": "",
+    "reason": ""
+  },
+  "warnings": []
+}

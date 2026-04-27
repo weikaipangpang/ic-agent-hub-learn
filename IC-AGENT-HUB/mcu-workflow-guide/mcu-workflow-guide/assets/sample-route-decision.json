@@ -1,0 +1,10 @@
+{
+  "current_stage_guess": "mcu-verification-triage",
+  "primary_skill": "mcu-verification-triage",
+  "fallback_skill": "mcu-rtl-development",
+  "missing_inputs": [
+    "full compile log",
+    "top-level module name",
+    "wrapper integration context"
+  ]
+}

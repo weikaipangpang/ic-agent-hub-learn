@@ -1,0 +1,212 @@
+[
+  {
+    "name": "vcs",
+    "binary": "vcs",
+    "version_cmd": ["vcs", "-full64", "-ID"],
+    "version_regex": "Compiler version\\s+([^\\s;]+)",
+    "smoke_type": "compile_sv",
+    "smoke_cmd": ["vcs", "-sverilog", "-full64"],
+    "role": "simulator",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "xcelium",
+    "binary": "xrun",
+    "version_cmd": ["xrun", "-version"],
+    "version_regex": "TOOL:\\s+xrun\\s+(\\S+)",
+    "smoke_type": "compile_sv",
+    "smoke_cmd": ["xrun", "-compile", "-sv"],
+    "role": "simulator",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "questa",
+    "binary": "vsim",
+    "version_cmd": ["vsim", "-version"],
+    "version_regex": "vsim\\s+([^\\s]+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["vsim", "-version"],
+    "role": "simulator",
+    "vendor": "Siemens"
+  },
+  {
+    "name": "irun",
+    "binary": "irun",
+    "version_cmd": ["irun", "-version"],
+    "version_regex": "TOOL:\\s+xrun\\s+(\\S+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["irun", "-version"],
+    "role": "simulator",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "verdi",
+    "binary": "verdi",
+    "version_cmd": ["verdi", "-version"],
+    "version_regex": "(Verdi[^\\n]*|version[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["verdi", "-version"],
+    "role": "waveform",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "dve",
+    "binary": "dve",
+    "version_cmd": ["dve", "-version"],
+    "version_regex": "(DVE[^\\n]*|version[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["dve", "-version"],
+    "role": "waveform",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "simvision",
+    "binary": "simvision",
+    "version_cmd": ["simvision", "-version"],
+    "version_regex": "(simvision[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["simvision", "-version"],
+    "role": "waveform",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "spyglass",
+    "binary": "spyglass",
+    "version_cmd": ["spyglass", "-version"],
+    "version_regex": "(SpyGlass[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["spyglass", "-version"],
+    "role": "lint",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "dc_shell",
+    "binary": "dc_shell",
+    "version_cmd": ["dc_shell", "-version"],
+    "version_regex": "dc_shell version\\s+[-\\s]+(\\S+)",
+    "smoke_type": "stdin_quit",
+    "smoke_cmd": ["dc_shell"],
+    "role": "synthesizer",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "genus",
+    "binary": "genus",
+    "version_cmd": ["genus", "-version"],
+    "version_regex": "(genus[^\\n]*|\\d+\\.\\d+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["genus", "-version"],
+    "role": "synthesizer",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "innovus",
+    "binary": "innovus",
+    "version_cmd": ["innovus", "-version"],
+    "version_regex": "(innovus[^\\n]*|\\d+\\.\\d+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["innovus", "-version"],
+    "role": "pnr",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "icc2_shell",
+    "binary": "icc2_shell",
+    "version_cmd": ["icc2_shell", "-version"],
+    "version_regex": "icc2_shell version\\s+[-\\s]+(\\S+)",
+    "smoke_type": "stdin_quit",
+    "smoke_cmd": ["icc2_shell"],
+    "role": "pnr",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "fm_shell",
+    "binary": "fm_shell",
+    "version_cmd": ["fm_shell", "-version"],
+    "version_regex": "fm_shell version\\s+[-\\s]+(\\S+)",
+    "smoke_type": "stdin_quit",
+    "smoke_cmd": ["fm_shell"],
+    "role": "equivalence",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "lec",
+    "binary": "lec",
+    "version_cmd": ["lec", "-version"],
+    "version_regex": "(lec[^\\n]*|Conformal[^\\n]*)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["lec", "-version"],
+    "role": "equivalence",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "pt_shell",
+    "binary": "pt_shell",
+    "version_cmd": ["pt_shell", "-version"],
+    "version_regex": "pt_shell version\\s+[-\\s]+(\\S+)",
+    "smoke_type": "stdin_quit",
+    "smoke_cmd": ["pt_shell"],
+    "role": "sta",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "tempus",
+    "binary": "tempus",
+    "version_cmd": ["tempus", "-version"],
+    "version_regex": "(tempus[^\\n]*|\\d+\\.\\d+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["tempus", "-version"],
+    "role": "sta",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "starxtract",
+    "binary": "StarXtract",
+    "version_cmd": ["StarXtract", "-version"],
+    "version_regex": "(StarRC[^\\n]*|\\d+\\.\\d+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["StarXtract", "-version"],
+    "role": "extraction",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "qrc",
+    "binary": "qrc",
+    "version_cmd": ["qrc", "-version"],
+    "version_regex": "(qrc[^\\n]*|\\d+\\.\\d+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["qrc", "-version"],
+    "role": "extraction",
+    "vendor": "Cadence"
+  },
+  {
+    "name": "calibre",
+    "binary": "calibre",
+    "version_cmd": ["calibre", "-version"],
+    "version_regex": "(calibre[^\\n]*|\\d+\\.\\d+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["calibre", "-version"],
+    "role": "physical_ver",
+    "vendor": "Siemens"
+  },
+  {
+    "name": "icv",
+    "binary": "icv_comp",
+    "version_cmd": ["icv_comp", "-version"],
+    "version_regex": "(ICV[^\\n]*|\\d+\\.\\d+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["icv_comp", "-version"],
+    "role": "physical_ver",
+    "vendor": "Synopsys"
+  },
+  {
+    "name": "pegasus",
+    "binary": "pegasus",
+    "version_cmd": ["pegasus", "-version"],
+    "version_regex": "(pegasus[^\\n]*|\\d+\\.\\d+)",
+    "smoke_type": "version_only",
+    "smoke_cmd": ["pegasus", "-version"],
+    "role": "physical_ver",
+    "vendor": "Cadence"
+  }
+]

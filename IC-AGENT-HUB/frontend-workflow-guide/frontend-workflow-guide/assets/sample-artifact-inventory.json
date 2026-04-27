@@ -1,0 +1,7 @@
+{
+  "artifacts": [
+    "filelist",
+    "makefile"
+  ],
+  "problem_focus": "integration and bring-up are unstable and I am not sure whether to debug or step back"
+}

@@ -1,0 +1,41 @@
+{
+  "version": "1.1",
+  "design_name": "",
+
+  "spec": {
+    "files": [],
+    "format": "markdown | pdf | docx"
+  },
+
+  "rtl": {
+    "dir": "rtl/",
+    "top_module": "",
+    "include_dirs": [],
+    "defines": [],
+    "filelist": ""
+  },
+
+  "tb": {
+    "dir": "tb/",
+    "top_module": "tb_top"
+  },
+
+  "sim": {
+    "dir": "sim/",
+    "simulator": "auto | vcs | xcelium | questa",
+    "waveform": "auto | verdi | dve | simvision",
+    "dump_format": "auto | fsdb | vpd | shm",
+    "timescale": "1ns/1ps"
+  },
+
+  "target": {
+    "platform": "asic | fpga",
+    "clock_freq_mhz": 0
+  },
+
+  "design_options": {},
+
+  "docs": {
+    "dir": "docs/"
+  }
+}

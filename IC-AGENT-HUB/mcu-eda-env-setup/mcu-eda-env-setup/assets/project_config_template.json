@@ -1,0 +1,98 @@
+{
+  "_comment": "Project configuration template for MCU full-flow. Copy to config/project.json and fill in all paths for your site.",
+  "design": {
+    "name": "",
+    "top_module": "",
+    "process": "",
+    "die_width_um": 0,
+    "die_height_um": 0,
+    "target_freq_mhz": 0,
+    "target_power_mw": 0,
+    "supply_voltage_v": 0
+  },
+  "clock_domains": [
+    {"name": "", "freq_mhz": 0, "port": ""}
+  ],
+  "tools": {
+    "_comment": "Set to 'auto' for auto-detection, or specify a tool name (e.g. 'vcs', 'dc_shell', 'innovus')",
+    "simulator":    {"name": "auto"},
+    "lint":         {"name": "auto"},
+    "synthesizer":  {"name": "auto"},
+    "pnr":          {"name": "auto"},
+    "equivalence":  {"name": "auto"},
+    "sta":          {"name": "auto"},
+    "extraction":   {"name": "auto"},
+    "physical_ver": {"name": "auto"}
+  },
+  "modules": {
+    "_comment": "Site-specific module names for 'module load'. Only needed if tools are not already in PATH.",
+    "vcs": "",
+    "xcelium": "",
+    "verdi": "",
+    "spyglass": "",
+    "dc_shell": "",
+    "genus": "",
+    "innovus": "",
+    "icc2": "",
+    "formality": "",
+    "conformal": "",
+    "primetime": "",
+    "tempus": "",
+    "starrc": "",
+    "qrc": "",
+    "calibre": "",
+    "icv": "",
+    "pegasus": ""
+  },
+  "env": {
+    "_comment": "Site-specific environment initialization. Set env_init_script to your site's EDA setup script, or leave empty if tools are already in PATH.",
+    "env_init_script": "",
+    "shell": ""
+  },
+  "libraries": {
+    "_comment": "Fill in paths for your PDK and standard cell library. Structure varies by foundry.",
+    "std_cell": {
+      "ss": {"db": [], "lib": [], "lef": "", "gds": ""},
+      "ff": {"db": [], "lib": [], "lef": "", "gds": ""},
+      "tt": {"db": [], "lib": [], "lef": "", "gds": ""}
+    },
+    "sram": [
+      {"name": "", "db": "", "lib": "", "lef": "", "gds": ""}
+    ]
+  },
+  "pdk": {
+    "_comment": "Fill in paths for your process design kit.",
+    "tech_file": "",
+    "tech_lef": "",
+    "tlu_plus_max": "",
+    "tlu_plus_min": "",
+    "layer_map": "",
+    "drc_rules": "",
+    "lvs_rules": "",
+    "extraction_tech_dir": ""
+  },
+  "physical_cells": {
+    "_comment": "Cell names from your standard cell library. Check library documentation.",
+    "filler": [],
+    "tap": "",
+    "endcap_left": "",
+    "endcap_right": ""
+  },
+  "directories": {
+    "rtl": "rtl",
+    "tb": "tb",
+    "sim": "sim",
+    "scripts": "scripts",
+    "sdc": "sdc",
+    "output": "output",
+    "rpt": "rpt",
+    "docs": "doc",
+    "gds": "output/gds",
+    "db": "output/db"
+  },
+  "lsf": {
+    "_comment": "LSF cluster configuration. Leave empty if not using LSF.",
+    "queue": "",
+    "ssh_gateway": ""
+  }
+}
